@@ -72,7 +72,6 @@ q42 = pi/2 -(q22+q32);
 smax = 100000;
 smin = 50000;
 qmax = 180;
-qmin = 0;
 
 
 disp('Solution 1:');
