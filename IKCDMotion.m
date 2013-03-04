@@ -18,8 +18,8 @@ d5 = 4.5;
 
 
 %% Desired Position input
-x_in = 12;
-y_in = 12;
+x_in = 10;
+y_in = 10;
 z_in = 0;
 
 %%
