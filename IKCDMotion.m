@@ -217,18 +217,17 @@ xwork = zeros(70000,1) ; % reserving space for the variables, because
 ywork = zeros(70000,1) ; % otherwise they would be created later within a loop.
 zwork = zeros(70000,1);
 p=0;
-for i = -181               % for q1
+for i = -45:10:45               % for q1
     qw1 = i*pi/180;
     cw1 = cos(qw1);
     sw1 = sin(qw1);
     
-    for j = 1:10:135                       % for q2
+ for j = -45:10:45                       % for q2
         qw2 = j*pi/180;
         cw2 = cos(qw2);
         sw2 = sin(qw2);
         
-        for k = -135:10:-10        % for q3
-            qw3 = k*pi/180;
+       for k = -35:10:25        % for q3            qw3 = k*pi/180;
             cw3 = cos(qw3);
             sw3 = sin(qw3);
             
