@@ -13,8 +13,8 @@ rad2deg = 180/pi;
 %% Links Length
 l1 = 8.5+9;
 l2 = 10 ;
-l3 = 12 ;
-d5 = 4.5;
+l3 = 13 ;
+d5 = 6.7;
 
 
 %% Desired Position input
