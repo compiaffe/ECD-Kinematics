@@ -18,9 +18,9 @@ d5 = 6.7;
 
 
 %% Desired Position input
-x_in = 10;
-y_in = 10;
-z_in = 0;
+x_in = 24.38;
+y_in = -6.66;
+z_in = -4.97;
 
 %%
 
@@ -81,7 +81,7 @@ disp( ([q1 q21 q31]*180/pi)*((smax-smin)/(qmax-qmin)+smin));
 
 
 disp('Solution 2:');
-disp([q1 q22 q32 q42]*180/pi);
+disp([q1 q22 q32 q42]*rad2deg);
 
 
 %% Draw the arm - this is the forward kinematics.
@@ -222,12 +222,13 @@ for i = -45:10:45               % for q1
     cw1 = cos(qw1);
     sw1 = sin(qw1);
     
- for j = -45:10:45                       % for q2
+    for j = -45:10:45                       % for q2
         qw2 = j*pi/180;
         cw2 = cos(qw2);
         sw2 = sin(qw2);
         
-       for k = -35:10:25        % for q3            qw3 = k*pi/180;
+        for k = -35:10:25        % for q3
+            qw3 = k*pi/180;
             cw3 = cos(qw3);
             sw3 = sin(qw3);
             
